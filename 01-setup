@@ -1,7 +1,7 @@
 #! /bin/bash
 
-docker stack rm nexus
+docker stack rm ${NAME}
 
 sleep 30
 
-docker stack deploy -c docker-compose.yml nexus
+docker stack deploy -c docker-compose.yml ${NAME}
