@@ -13,12 +13,12 @@ Make required changes to the new copied file.
 
 ## Deployment
 1. Source/ export environment variables inside file from "Configuration" stage.
-Automated:
-2a1. Run ```./01-setup```
-Manual
-2m1. Run ```docker stack rm ${NAME}
-2m2. Wait up to 30 seconds (not required if no stack was cleaned from step 2m1.
-2m3. Run ```docker stack deploy -c docker-compose.yml ${NAME}
+2. Automated
+  - Run ```./01-setup```
+3. Manual
+  -  Run ```docker stack rm ${NAME}```
+  -  Wait up to 30 seconds (not required if no stack was cleaned from step 2m1.
+  -  Run ```docker stack deploy -c docker-compose.yml ${NAME}```
 
 There is a simple removal and deployment script ```01-setup```. This contains the required commands to remove and stand up the Nexus Docker Stack.
 
